@@ -1,0 +1,45 @@
+.calendar {
+    text-align: center;
+    max-width: 400px;
+}
+
+.month_year {
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    background-color: skyblue;
+}
+
+.days {
+    composes: calendar;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan;
+}
+
+.weeks {
+    composes: days;
+    color: darkcyan;
+}
+
+.day {
+    border: 1px solid skyblue;
+    border-radius: 5px;
+}
+
+.day:hover {
+    background-color: lightskyblue;
+    border: 1px solid skyblue;
+    cursor: pointer;
+    color: white;
+}
+
+.selected {
+    background-color: skyblue;
+    color: white;
+}

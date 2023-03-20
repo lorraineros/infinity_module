@@ -1,0 +1,56 @@
+.carousel {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.small-car {
+    composes: carousel;
+    max-width: 350px;
+}
+
+.medium-car {
+    composes: carousel;
+    max-width: 550px;
+}
+
+.large-car {
+    composes: carousel;
+    max-width: 750px;
+}
+
+.image {
+    padding: 10px;
+}
+
+.small {
+    composes: image;
+    width: 300px; 
+    height: auto;
+    max-height: 400px;
+}
+
+.medium {
+    composes: image;
+    width: 500px; 
+    height: auto;
+    max-height: 600px;
+}
+
+.large {
+    composes: image;
+    width: 700px; 
+    height: auto;
+    max-height: 800px;
+}
+
+.arrow {
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}

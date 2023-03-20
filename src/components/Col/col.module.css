@@ -1,0 +1,77 @@
+.col {
+    min-height: 30px;
+    outline: 2px solid black;
+    margin: 3px 0 3px 0;
+}
+
+.size1 {
+    composes: col;
+    width: 8.3333333%;
+    background-color: rgb(255, 0, 0);
+}
+
+.size2 {
+    composes: col;
+    width: 16.6666667%;
+    background-color: rgb(255, 127, 0);
+}
+
+.size3 {
+    composes: col;
+    width: 25%;
+    background-color: rgb(255, 255, 0);
+}
+
+.size4 {
+    composes: col;
+    width: 33.3333333%;
+    background-color: rgb(127, 255, 0);
+}
+
+.size5 {
+    composes: col;
+    width: 41.6666667%;
+    background-color: rgb(0, 255, 0);
+}
+
+.size6 {
+    composes: col;
+    width: 50%;
+    background-color: rgb(0, 255, 127);
+}
+
+.size7 {
+    composes: col;
+    width: 58.3333333%;
+    background-color: rgb(0, 255, 255);
+}
+
+.size8 {
+    composes: col;
+    width: 66.6666667%;
+    background-color: rgb(0, 127, 255);
+}
+
+.size9 {
+    composes: col;
+    width: 75%;
+    background-color: rgb(0, 0, 255);
+}
+
+.size10 {
+    composes: col;
+    width: 83.3333333%;
+    background-color: rgb(127, 0, 255);
+}
+
+.size11 {
+    composes: col;
+    width: 91.6666667%;
+    background-color: rgb(255, 0, 255);
+}
+
+.size12 {
+    composes: col;
+    width: 100%;
+    background-color: rgb(255, 0, 127);
+}

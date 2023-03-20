@@ -1,0 +1,46 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+  
+.modal {
+    background-color: white;
+    max-width: 500px;
+    max-height: 300px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 15% auto 15%;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.children {
+    padding: 10px;
+}
+
+.title {
+    composes: children;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+}
+
+.body {
+    composes: children;
+}
+
+.footer {
+    composes: children;
+    border-top: 1px solid rgba(0, 0, 0, 0.75);
+    text-align: right;
+}
